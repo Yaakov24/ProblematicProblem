@@ -85,7 +85,16 @@ namespace ProblematicProblem
                     }
                     Console.WriteLine();
                     Console.WriteLine("Would you like to add more? yes/no: ");
-                    bool addToList1 = bool.Parse(Console.ReadLine());
+                   
+                    addToList = false;
+                    if (Console.ReadLine().ToLower() == "yes")
+                    {
+                        addToList = true;
+                    }
+                    else if (Console.ReadLine().ToLower() == "no")
+                    {
+                        addToList = false;
+                    }
                 }
             }
 
